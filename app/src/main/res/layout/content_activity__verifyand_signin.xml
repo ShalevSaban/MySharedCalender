@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
     <LinearLayout
 
         android:layout_width="match_parent"
@@ -25,33 +22,27 @@
 
 
         <EditText
-            android:id="@+id/phoneNumber"
+            android:id="@+id/verifiedCode"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="top|center"
             android:layout_marginTop="50dp"
             android:background="#11000000"
-            android:drawableLeft="@drawable/icphone24"
             android:ems="10"
-            android:hint="Phone Number"
+            android:hint="verified Code"
             android:padding="15dp"
             android:textColor="@color/white"
             android:textSize="20dp"></EditText>
 
-        <com.hbb20.CountryCodePicker
-            android:id="@+id/ccp"
-            android:layout_width="115dp"
-            android:layout_height="43dp"
-            android:layout_gravity="top|center"
-            app:layout_constraintEnd_toStartOf="@+id/t1" />
+
 
         <Button
-            android:id="@+id/sendSmsCode"
+            android:id="@+id/verifiedButton"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="top|center"
             android:layout_marginTop="20dp"
-            android:hint="Login"
+            android:hint="verified"
             android:shadowColor="@android:color/background_dark"
             android:textColorHint="@color/black"
             app:backgroundTint="#4D6A9A"></Button>
