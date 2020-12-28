@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="top|center"
             android:layout_marginTop="20dp"
-            android:hint="Login"
+            android:hint="@string/login"
             android:shadowColor="@android:color/background_dark"
             android:textColorHint="@color/black"
             app:backgroundTint="#4D6A9A" />
